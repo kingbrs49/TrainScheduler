@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+
+    <title>Horoscope Tracker</title>
+</head>
+
+<body>
+    <div class="container" style="background-image: url('assets/images/horoscope-background.jpg');">
+        <br>
+
+        <div class="jumbotron">
+            <h1>Look Up Your HOROSCOPE!!</h1>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-6">
+                <div class="card card-default">
+                    <div class="card-header">
+                        What's Your HOROSCOPE?!
+                    </div>
+                    <div class="card-body">
+
+                        <form role="form">
+                            <div class="form-group row">
+                                <label for="name-input">Name:</label>
+                                <input class="form-control" id="name-input" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="age-input">Age:</label>
+                                <input class="form-control" id="age-input" type="number">
+                            </div>
+                            <div class="form-group row">
+                                <label for="birthday">Birthday:</label>
+                                <input class="form-control" id="birthday" type="date">
+                            </div>
+                            <button class="btn btn-info" id="input-birthday" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card card-default">
+                    <div class="card-header">
+                        Your Horoscope:
+                    </div>
+                    <div class="card-body" id="horoscope-input">
+                        <h2 id="h-name">Marcus</h2>
+                        <h3 id="h-birthday">January 28</h3>
+                        <br>
+                        <h3 id="h-sign-display">Aquarius</h3>
+                        <br>
+                        <p id="horoscope-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+                            distinctio ex repellat, mollitia cupiditate nam nihil labore explicabo fuga minima unde
+                            iusto
+                            repudiandae voluptatum harum odit ratione ullam perferendis? Eligendi!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>Copyright 2019</footer>
+    </div>
+
+    <script src="./assets/javascript/app.js"></script>
+
+</body>
+
+</html>
